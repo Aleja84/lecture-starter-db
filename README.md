@@ -29,7 +29,7 @@ erDiagram
         INT idFiles PK
         VARCHAR(100) fileName
         VARCHAR(45) mimeType
-        VARCHAR(50) key
+        VARCHAR(50) keyFile
         VARCHAR(30) url
         INT timestamps_idTimestamps FK
         INT person_idPerson FK
