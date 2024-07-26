@@ -52,6 +52,28 @@ erDiagram
         INT timestamps_idTimestamps FK
     }
 
+    CHARACTER {
+        INT idCharacter PK
+        VARCHAR(30) name UNIQUE
+        TEXT description
+        ENUM role
+        INT timestamps_idTimestamps FK
+        INT person_idPerson FK
+    }
+
+    MOVIE {
+        INT idMovie PK
+        VARCHAR(40) title UNIQUE
+        TEXT description
+        DOUBLE budget
+        DATE releaseDate
+        INT duration
+        INT timestamps_idTimestamps FK
+        INT files_idFiles FK
+        INT director_idDirector FK
+        INT country_idCountry FK
+    }
+
     GENRE {
         INT idGenre PK
         VARCHAR(35) name
